@@ -1,0 +1,40 @@
+Annotations
+----
+@Test
+
+@BeforeMethod
+@AfterMethod
+
+@BeforeClass
+@AfterClass
+
+@BeforeTest
+@AfterTest
+
+@BeforeSuite
+@AfterSuite
+
+
+Suite-->Tests--->Classes--->Methods
+
+XML -- Tests----Classes--->Methods
+
+---Dependent Methods
+
+Hard assertions
+----
+Access though 'Assert' class
+all methods are static
+if hard assertion got failed then rest of the statement will not be executed.
+
+Soft assertions
+-----------
+access through 'SoftAssert' object
+
+SoftAssert sa=new SoftAssert();
+sa.assertTrue()
+
+if soft assertion got failed then rest of the statements still execute.
+
+
+

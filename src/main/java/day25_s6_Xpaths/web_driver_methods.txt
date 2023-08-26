@@ -1,0 +1,28 @@
+Web Driver Methods
+---------------------
+1.get methods
+2.conditional methods
+3.Browser methods
+4.Navigational methods
+5.wait methods
+
+
+1.get methods: We can access these methods through webdriver instance.
+
+i)get(String url)
+ii)getTitle()
+iii)getCurrentUrl()
+iV)getPageSource()
+v)getWindowHandle()
+Vi)getWindowHandles()
+
+2.Conditional methods: access through webelements
+always returns boolean values (true/false)
+i)isDisplayed()
+ii)isSelected()
+iii)isEnabled()
+
+3)Browser methods
+i)close()
+ii)quit()
+

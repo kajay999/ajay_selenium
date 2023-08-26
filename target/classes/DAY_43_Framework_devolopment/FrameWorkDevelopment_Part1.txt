@@ -1,0 +1,71 @@
+Framework
+--
+ we organize automation project files/foldes in structured manner.
+
+Objectives
+------------
+1) Re-usubility
+2) Maintainability
+3) Readability
+
+Types of frameworks
+-------
+1) Built-in frameworks
+	ex: Junit, testng, cucumber etc...
+
+2) Customized/user defined frameworks
+	ex: data driven, modular, keyword driven, hybrid driven etc...
+
+Phases
+--------
+1) Analysing AUT
+	- No of pages
+	- no of elements
+	  - test cases
+	- what to automate/ what we cannot automate
+
+2) choosing test cases for automation
+
+100 TC'c ------> 90 automatatble    10 tc not automatable
+
+90 test-----> 100%
+
+1) sanity test cases - P1
+2) Data driven / re-test cases  - P2
+3) Regression test case -P3
+4) Any other test cases - P4
+
+3) Design & Development of framework
+
+4) Execution
+
+5) Maintanace
+
+
+eCommerce -  Domain
+
+
+Frontend operations  ( user)
+	- Register account
+	- login
+	- search for product
+	- add/edit/delete products to cart
+	 -orders items
+	- track th eitems
+etc...
+
+Backend operations  ( Admin)
+	- product details
+	- customer details
+	- order details
+	- store details	
+	etc......
+
+
+
+
+
+
+
+
+

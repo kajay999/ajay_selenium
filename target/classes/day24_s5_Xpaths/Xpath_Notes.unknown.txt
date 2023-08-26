@@ -1,0 +1,34 @@
+Types of Xpaths
+--------------------
+i)Absolute Xpath(Full Xpath)
+		/html/body/header/div/div/div[2]/div/input
+-starts with single /
+- can use attribute and values
+
+
+ii)Relative Xpath (Partial xpath)
+		//*[@id="search"]/input
+
+- starts with //
+- can use attribute and values
+
+
+---Which will prefer?
+relative xpath
+
+
+How to write xpath?
+syntax 
+------
+  //tagname[@attribute='value']
+  //input[@name='search']
+  
+  //*[@attribute='value']
+  //*[@name='search']
+  
+xpath having multiple attributes
+xpath functions - text(), normalized-space(), contains() start-with()
+xpath operators - and      or
+xpath axes - following, preceding, sibling, parent, self, ancestor etc.....
+How to locate elements who attributes are dynamically changing
+  

@@ -1,0 +1,19 @@
+TestNG Listners
+-------------
+ITestListener ---> Interface
+TestListenerAdapter  -- Class
+
+onTestStart()
+onTestFailure()
+onTestSuccess()
+onTestSkipped()
+onStart
+onFinish
+
+
+extent report
+----------
+1) add dependency in pom.xml
+2) create test case
+3) create listener class
+4) create xml file

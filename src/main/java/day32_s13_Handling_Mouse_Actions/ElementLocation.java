@@ -1,0 +1,48 @@
+package day32_s13_Handling_Mouse_Actions;
+
+import java.time.Duration;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
+
+public class ElementLocation {
+	public static void main(String[] args) throws InterruptedException {
+		WebDriver driver = new ChromeDriver();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
+		driver.get("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
+
+		WebElement logo=driver.findElement(By.xpath("//img[@alt='company-branding']"));
+		
+		
+		System.out.println("Before maximizing window:"+logo.getLocation()); //(250, 202)
+		Thread.sleep(2000);
+		driver.manage().window().maximize();
+		System.out.println("After maximizing window:"+logo.getLocation());  //(660, 185)
+		Thread.sleep(2000);
+		
+		driver.manage().window().minimize();
+		System.out.println("After minimizing window:"+logo.getLocation()); //(250, 157)
+		Thread.sleep(2000);
+	
+		driver.manage().window().fullscreen();
+		System.out.println("After Full screen window:"+logo.getLocation());  //(660, 233)
+		Thread.sleep(2000);
+		
+		Point p=new Point(100,100);
+		driver.manage().window().setPosition(p);
+		System.out.println("After setting window 100 * 100:"+logo.getLocation());  //(251, 159)
+		Thread.sleep(2000);
+		
+		 p=new Point(50,50);
+		driver.manage().window().setPosition(p);
+		System.out.println("After setting window 50 * 50:"+logo.getLocation());  //(252, 160)
+	}
+
+}
